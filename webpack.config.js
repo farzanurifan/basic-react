@@ -11,15 +11,15 @@ module.export = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /node_module/,
+                exclude: /node_modules/,
                 use:{
                     loader: 'babel-loader'
-                }                
+                },
             }
         ]
     },
     plugins: [
-        newHtmlWebpackPugin({
+        new HtmlWebpackPlugin({
             template: './src/index.html'
         })
     ]
